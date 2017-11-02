@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     // MARK: Properties
-    @IBOutlet weak var iamgeView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
     var currentDrawType = 0
     
     override func viewDidLoad() {
@@ -25,7 +25,21 @@ class ViewController: UIViewController {
     }
     
     func drawRectangle() {
+        let renderer = UIGraphicsImageRenderer(size: CGSize(width: 512, height: 512))
         
+        let img = renderer.image { ctx in
+            // awesome drawing code
+            let rectangle = CGRect(x: 0, y: 0, width: 512, height: 512)
+            
+            ctx.cgContext.setFillColor(UIColor.red.cgColor)
+            ctx.cgContext.setStrokeColor(UIColor.black.cgColor)
+            ctx.cgContext.setLineWidth(10)
+            
+            ctx.cgContext.addRect(rectangle)
+            ctx.cgContext.drawPath(using: .fillStroke)
+        }
+        
+        imageView.image = img
     }
 
     @IBAction func redrawTapped(_ sender: UIButton) {
