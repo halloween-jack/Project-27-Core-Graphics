@@ -13,6 +13,8 @@
 		55F401641FAB89CA00745CFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F401631FAB89CA00745CFE /* Assets.xcassets */; };
 		55F401671FAB89CA00745CFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F401651FAB89CA00745CFE /* LaunchScreen.storyboard */; };
 		55F401721FAB89CA00745CFE /* Project27Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F401711FAB89CA00745CFE /* Project27Tests.swift */; };
+		55F4017E1FAB8BAA00745CFE /* mouse@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F4017C1FAB8BAA00745CFE /* mouse@2x.png */; };
+		55F4017F1FAB8BAA00745CFE /* mouse.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F4017D1FAB8BAA00745CFE /* mouse.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		55F4016D1FAB89CA00745CFE /* Project27Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project27Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F401711FAB89CA00745CFE /* Project27Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project27Tests.swift; sourceTree = "<group>"; };
 		55F401731FAB89CA00745CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55F4017C1FAB8BAA00745CFE /* mouse@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mouse@2x.png"; sourceTree = "<group>"; };
+		55F4017D1FAB8BAA00745CFE /* mouse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mouse.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			children = (
 				55F4015C1FAB89CA00745CFE /* AppDelegate.swift */,
 				55F4015E1FAB89CA00745CFE /* ViewController.swift */,
+				55F4017D1FAB8BAA00745CFE /* mouse.png */,
+				55F4017C1FAB8BAA00745CFE /* mouse@2x.png */,
 				55F401601FAB89CA00745CFE /* Main.storyboard */,
 				55F401631FAB89CA00745CFE /* Assets.xcassets */,
 				55F401651FAB89CA00745CFE /* LaunchScreen.storyboard */,
@@ -180,7 +186,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				55F401671FAB89CA00745CFE /* LaunchScreen.storyboard in Resources */,
+				55F4017F1FAB8BAA00745CFE /* mouse.png in Resources */,
 				55F401641FAB89CA00745CFE /* Assets.xcassets in Resources */,
+				55F4017E1FAB8BAA00745CFE /* mouse@2x.png in Resources */,
 				55F401621FAB89CA00745CFE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,7 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Project27;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -373,7 +381,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Project27;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
